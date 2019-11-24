@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{  
+            margin: 0;
+            padding: 0;
+        }
+      
+    body
+    {margin:0px;
+    padding:0px;
+    font-size:14px;}
+    .panel{
+    width: 1130px;
+    margin: 0 auto;}
+    .h-logo 
+   { width:200px;
+    height:98px;
+    background-repeat: no-repeat;}
+    .mainbox
+{   
+    background-color: #fff;
+    position: relative;
+    width: 410px;
+    min-height: 556px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: auto;
+    font-size: 14px;
+    z-index: 4;
+}
+.layout
+{
+    color:#e09431;
+    display:block;
+    font-size:24px;
+    height:32px;
+    margin: 12px;
+    padding-bottom:24px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:27px;
+    text-align:center;
+}
+.btn_qq {
+    width: 30px;
+    height: 30px;
+    background-color: #0288d1;
+}
+.btn_weibo{ 
+    
+    
+    background-color: #d32f2f;
+}
+.btn_alipay {
+    background-color: #0ae;
+}
+.btn_weixin {
+    background-color: #00d20d;
+}
+.oth_type_links {
+    padding-top: 30px;
+    margin-left: 57px;
+
+}
+.btn_sns_icontype {
+  background: url("./img/icons_type.png");
+  background-image: url("./img/icons_type.png");
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  display: inline-block;
+}
+    .icon_default_weixin {
+    background-position: -83px 0;
+    width: 24px;
+    margin: 6px 2px;
+}
+.icon_default_weibo {
+    background-position: -39px 0;
+    width: 18px;
+    margin: 6px;
+}
+.icon_default_qq {
+    background-position: -19px 0;
+    width: 18px;
+    margin:6px;
+}
+.icon_default_alipay {
+    background-position: -56px 0;
+    width: 25px;
+    margin: 6px 3px;
+}
+.icon_type{
+    width: 30px;
+    height: 30px;
+    margin: 0 17px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+    </style>
+</head> 
+<body>
+    <div class="panel">
+        <div class="h-logo">  
+            <p id="logo"><img src="./top/img/mistore_logo.png"></p>
+        </div>
+<div class="banner" >
+    <div class='central'>
+    <!-- 登录界面 -->
+    <div class="mainbox">
+           <div class="layout">
+                 账号登录
+                <span class="line"></span>
+                 扫码登录
+           </div>
+           <div>
+               <input class="text" type="text">
+               <input class="text" type="text">
+           </div>
+           <div></div>
+           <div></div>
+           <div class="login-icon"></div> 
+           <div id="sns-login-links" class="oth_type_links">
+             <a class="icon_type btn_qq sns-login-link" 
+            data-type="qq" href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=100284651&redirect_uri=https://account.xiaomi.com/pass/sns/login/load&state=STATE_147982"
+             title="QQ登录" target="_blank"><i class="btn_sns_icontype icon_default_qq"></i></a>
+             <a class="icon_type btn_weibo sns-login-link" data-type="weibo" href="https://api.weibo.com/oauth2/authorize?response_type=code&client_id=2996826273&redirect_uri=https://sns.account.xiaomi.com/pass/sns/login/load&state=STATE_063685" 
+             title="微博登录" target="_blank"><i class="btn_sns_icontype icon_default_weibo"></i></a>
+            <a class="icon_type btn_alipay sns-login-link" data-type="alipay" href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3D3bb0ce81b392951f90ce627e8c9e2944"
+              title="支付宝登录" target="_blank"><i class="btn_sns_icontype icon_default_alipay"></i></a>
+            <a class="icon_type btn_weixin sns-login-link" data-type="weixin" href="https://open.weixin.qq.com/connect/qrconnect?appid=wxa21de3acc0d5e79b&redirect_uri=https%3A%2F%2Fsns.account.xiaomi.com%2Fpass%2Fsns%2Flogin%2Fload&response_type=code&scope=snsapi_login&state=STATE_321252#wechat_redirect"
+               title="微信登录" target="_blank"><i class="btn_sns_icontype icon_default_weixin"></i></a>
+           </div>
+        </body>
+</html>
